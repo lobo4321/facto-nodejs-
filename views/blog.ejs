@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>LearnUp - Online Course & Education HTML Template</title>
+    <title>Feira Blog</title>
 
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
@@ -33,164 +33,34 @@
       <%- include('parts/page-header') %>
       <!-- End Navigation -->
       <div class="clearfix"></div>
+
       <!-- ============================================================== -->
       <!-- Top header  -->
       <!-- ============================================================== -->
 
       <!-- ============================ Page Title Start================================== -->
-      <%- include('parts/page-title', {title: 'Cursos e Vídeos Gratuitos',
-      subtitle: 'Cursos'}) %>
+      <%- include('parts/page-title', {title: 'Blog Feira', subtitle: 'Blogs'})
+      %>
       <!-- ============================ Page Title End ================================== -->
 
-      <!-- ============================ Full Width Courses  ================================== -->
+      <!-- ========================== Articles Section =============================== -->
       <section class="pt-0">
         <div class="container">
-          <!-- Onclick Sidebar -->
-          <div class="row">
-            <div class="col-md-12 col-lg-12">
-              <div id="filter-sidebar" class="filter-sidebar">
-                <div class="filt-head">
-                  
-                  <a
-                    href="javascript:void(0)"
-                    class="closebtn"
-                    onclick="closeNav()"
-                    >Fechar <i class="ti-close"></i
-                  ></a>
-                </div>
-                <ul id="terminal1">
-                <div class="show-hide-sidebar">
-                  <div id="myBtnContainer">
-                    <li class="sidebar-item">
-                    <button
-                      class="btn filter_open "
-                      id="alltags"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      onclick="filterSelection('all');closeNav(); change_urlAll()"
-                    >
-                      Mostrar todos
-                    </button>
-                  </li>
-                    <li class="sidebar-item" >
-                    <button
-                      class="btn filter_open "
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      onclick="filterSelection('barbeiro');closeNav();change_urlBarber(); "
-                      id="tagBarber"
-                      value="Barbeiro"
-                    
-                    >
-                      Barbeiro
-                    </button>
-                  </li>
-                  <li class="sidebar-item">
-                    <button
-                      class="btn filter_open "
-                      onclick="filterSelection('cabelereiro');closeNav(); change_urlCabele()"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      id="tagHaircut"
-                    >
-                      Cabelereiro
-                    </button>
-                  </li>
-                  
-                  <li class="sidebar-item">
-                    <button
-                      class="btn filter_open "
-                      onclick="filterSelection('designerCilios');closeNav(); change_urlDesignerCilios()"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      id="tagDesignCilios"
-                    >
-                      Designer Cilios
-                    </button>
-                  </li>
-                 
-                  
-                  <li class="sidebar-item"> 
-                    <button
-                      class="btn filter_open "
-                      onclick="filterSelection('manicure');closeNav(); change_urlManicure()"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      id="tagManicure"
-                    >
-                      Manicure
-                    </button>
-                  </li>
-                  <li class="sidebar-item">
-                    <button
-                      class="btn filter_open "
-                      onclick="filterSelection('maquiador');closeNav(); change_urlMaquiador()"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      id="tagMaquiador"
-                    >
-                      Maquiador
-                    </button>
-                  </li>
-                  <li class="sidebar-item">
-                    <button
-                      class="btn filter_open "
-                      onclick="filterSelection('depilador');closeNav(); changeTagColor(); change_urlDepilador()"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      id="tagDepilador"
-                    >
-                      Depilador
-                    </button>
-                  </li>
-                  </div>
-                </div>
-              </ul>
-              </div>
-            </div>
+          <div class="row" id="data-blogs">
+            
 
-            <!-- Row -->
-            <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <!-- Row -->
-                <div class="row align-items-center mb-3" id="data-courses-length" style="flex-direction: row-reverse;">
-                  <div class="col-lg-6 col-md-6 col-sm-12" style="text-align: end;">
-                    Encontramos <strong> 142 </strong> cursos para você
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12 ordering">
-                    <div class="filter_wraps">
-                      <div class="dl">
-                        <div id="main2">
-                          <a
-                            href="javascript:void(0)"
-                            class="btn btn-theme arrow-btn filter_open"
-                            onclick="openNav()"
-                            id="filterCourses"
-                            >Filtrar<span
-                              
-                                
-                              ><img src="/img/filter.svg" alt="" style="width: 35px; height: px;"></span
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /Row -->
-
-                <div class="row containerCourses" id="data-courses"></div>
-              </div>
-
-              
-            </div>
-           
-          </div>
-           <!-- Row -->
-           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-              <!-- Pagination -->
-              <%- include('parts/loadmore-btn')  %> 
-            </div>
-          </div>
-          <!-- /Row -->
-          </div>
           <!-- Row -->
+          
+          <!-- /Row -->
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <!-- Pagination -->
+            <%- include('parts/loadmore-btn')  %> 
+          </div>
         </div>
       </section>
-      <!-- ============================ Full Width Courses End ================================== -->
+      <!-- ========================== Articles Section =============================== -->
 
       <!-- ============================== Start Newsletter ================================== -->
       <%- include('parts/page-newsletter') %>
@@ -373,20 +243,10 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/counterup.min.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/coursesAdd.js"></script>
+    <script src="js/blogsAdd.js"></script>
+
     <!-- ============================================================== -->
     <!-- This page plugins -->
     <!-- ============================================================== -->
-    <script>
-      function openNav() {
-        document.getElementById("filter-sidebar").style.width = "320px";
-      }
-
-      function closeNav() {
-        document.getElementById("filter-sidebar").style.width = "0";
-      }
-    </script>
-
-    <script src="js/index.js"></script>
   </body>
 </html>

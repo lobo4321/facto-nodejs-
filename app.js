@@ -17,7 +17,7 @@ app.use('/img', express.static(__dirname + 'public/img'))
 app.set('views', './views')
 app.set('view engine', 'ejs')
 
-app.get('/index', (req,res) => {
+app.get('/', (req,res) => {
     res.render('index')
 })
 
@@ -29,6 +29,21 @@ app.get('/contact', (req,res) => {
 })
 app.get('/privacy', (req,res) => {
     res.render('privacy')
+})
+app.get('/news', (req,res) => {
+    res.render('news')
+})
+app.get('/blog', (req,res) => {
+    res.render('blog')
+})
+app.get('/blog-detail', (req,res) => {
+    res.render('blog-detail')
+})
+app.get('/courses_todos', (req,res) => {
+    res.render('courses_all')
+})
+app.get('/courses_barbeiro', (req,res) => {
+    res.render('courses_barbeiro')
 })
 
 

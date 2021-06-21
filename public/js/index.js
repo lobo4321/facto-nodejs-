@@ -66,3 +66,48 @@ function getName() {
 const banana = {
   name: 'banana'
 }
+
+
+//change url
+
+function change_urlAll() {
+  history.pushState({}, "", "courses_todos")
+}
+function change_urlBarber() {
+  history.pushState({}, "", "courses_barbeiro")
+}
+function change_urlCabele() {
+  history.pushState({}, "", "courses_cabelereiro")
+}
+function change_urlDesignerCilios() {
+  history.pushState({}, "", "courses_designer_cilios")
+}
+function change_urlManicure() {
+  history.pushState({}, "", "courses_manicure")
+}
+function change_urlMaquiador() {
+  history.pushState({}, "", "courses_maquiador")
+}
+function change_urlDepilador() {
+  history.pushState({}, "", "courses_depilador")
+}
+
+//change color tag 
+
+let btnTagAll = document.querySelector('#alltags');
+
+btnTagAll.addEventListener('click', () => btnTagAll.style.backgroundColor = '#278EEE')
+btnTagAll.addEventListener('click', () => btnTagAll.style.borderColor = '#278EEE')
+
+
+let btnTagBarber = document.querySelector('#tagBarber');
+
+btnTagBarber.addEventListener('click', () => btnTagBarber.style.backgroundColor = '#278EEE')
+btnTagBarber.addEventListener('click', () => btnTagBarber.style.borderColor = '#278EEE')
+
+
+function changeButton(){
+  if(btnTagBarber.style.backgroundColor == btnTagAll.style.backgroundColor){
+    return btnTagBarber.style.backgroundColor = '#808080'
+  }
+}
