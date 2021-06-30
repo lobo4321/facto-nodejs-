@@ -10613,12 +10613,9 @@ html {
   font-family: "Montserrat", sans-serif !important ;
 }
 
-.filterDiv {
-  display: none;
-}
 
-.show {
-  display: block;
+.hide {
+  display: none;
 }
 
 .containerCourses {
@@ -10760,4 +10757,18 @@ html {
 
 .form-control.simple.offline {
   border-color: #ff3765;
+}
+
+.btn.filter_open {
+  border-color: #b4b4b4;
+  background: #b4b4b4;
+}
+
+.btn.filter_open.blue {
+  background-color: #278eee;
+  border-color: #278eee;
+}
+
+.education_block_body p {
+  min-height: 50px;
 }

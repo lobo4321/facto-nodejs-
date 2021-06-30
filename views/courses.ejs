@@ -63,20 +63,20 @@
                   <div id="myBtnContainer">
                     <li class="sidebar-item">
                     <button
-                      class="btn filter_open "
-                      id="alltags"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      onclick="filterSelection('all');closeNav(); change_urlAll()"
+                      class="btn filter_open tag "
+
+                      
+                      onclick="closeNav()"
                     >
                       Mostrar todos
                     </button>
                   </li>
                     <li class="sidebar-item" >
                     <button
-                      class="btn filter_open "
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
+                      class="btn filter_open tag"
+
                       onclick="filterSelection('barbeiro');closeNav();change_urlBarber(); "
-                      id="tagBarber"
+                      id="barbeiro"
                       value="Barbeiro"
                     
                     >
@@ -85,55 +85,58 @@
                   </li>
                   <li class="sidebar-item">
                     <button
-                      class="btn filter_open "
-                      onclick="filterSelection('cabelereiro');closeNav(); change_urlCabele()"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      id="tagHaircut"
+                      class="btn filter_open tag"
+                      onclick="closeNav()"
+                      
+                      id="cabeleireiro"
                     >
-                      Cabelereiro
+                      Cabeleireiro
                     </button>
                   </li>
                   
                   <li class="sidebar-item">
                     <button
-                      class="btn filter_open "
-                      onclick="filterSelection('designerCilios');closeNav(); change_urlDesignerCilios()"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      id="tagDesignCilios"
+                      class="btn filter_open tag"
+                      onclick="closeNav()"
+
+                      id="designerCilios"
                     >
-                      Designer Cilios
+                      Designer Sobrancelhas
                     </button>
                   </li>
                  
                   
                   <li class="sidebar-item"> 
                     <button
-                      class="btn filter_open "
-                      onclick="filterSelection('manicure');closeNav(); change_urlManicure()"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      id="tagManicure"
+                      class="btn filter_open tag"
+                      onclick="closeNav()"
+
+                      
+                      id="manicure"
                     >
                       Manicure
                     </button>
                   </li>
                   <li class="sidebar-item">
                     <button
-                      class="btn filter_open "
-                      onclick="filterSelection('maquiador');closeNav(); change_urlMaquiador()"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      id="tagMaquiador"
+                      class="btn filter_open tag"
+                      onclick="closeNav()"
+
+                      
+                      id="maquiador"
                     >
                       Maquiador
                     </button>
                   </li>
                   <li class="sidebar-item">
                     <button
-                      class="btn filter_open "
-                      onclick="filterSelection('depilador');closeNav(); changeTagColor(); change_urlDepilador()"
-                      style="background-color: #B4B4B4; border-color: #B4B4B4;"
-                      id="tagDepilador"
+                      class="btn filter_open tag"
+                      onclick="closeNav()"
+
+                      
+                      id="tatuador"
                     >
-                      Depilador
+                      Tatuador
                     </button>
                   </li>
                   </div>
@@ -147,8 +150,8 @@
               <div class="col-lg-12 col-md-12 col-sm-12">
                 <!-- Row -->
                 <div class="row align-items-center mb-3" id="data-courses-length" style="flex-direction: row-reverse;">
-                  <div class="col-lg-6 col-md-6 col-sm-12" style="text-align: end;">
-                    Encontramos <strong> 142 </strong> cursos para você
+                  <div class="col-lg-6 col-md-6 col-sm-12" style="text-align: end;" >
+                    Encontramos <strong id="countCourses"> 142 </strong> cursos para você
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-12 ordering">
                     <div class="filter_wraps">
