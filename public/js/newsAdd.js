@@ -1,28 +1,32 @@
-const news = [{
+  const news = [{
     id: 1,
-    title: 'Manicure usa a Facto e aumenta sua vendas em 100%',
-    author: 'Globo',
-    img: 'img/manicureNews.jpeg',
-    authorimg: 'img/logoGlobo.png',
-    link: 'https://g1.globo.com/sp/santos-regiao/noticia/2021/05/12/manicure-viraliza-ao-produzir-unhas-de-ate-12-cm-com-pedacos-de-dolar-e-imitacao-de-cannabis.ghtml',
+    title: 'Pequenos negócios geraram 70% dos empregos com carteira assinada no país',
+    author: 'Exame',
+    img: 'img/exame-1.jpeg',
+    authorimg: 'img/exame-logo.jpeg',
+    link: 'https://exame.com/pme/pequenos-negocios-geracao-de-empregos/',
 },
 {
     id: 2,
-    title: 'Barbeiro fica com a agenda lotada',
-    author: 'New York Times',
-    img: 'img/barbeiroNews.png',
-    authorimg: 'img/logoGlobo.png',
-    link: 'https://g1.globo.com/sp/santos-regiao/noticia/2021/05/12/manicure-viraliza-ao-produzir-unhas-de-ate-12-cm-com-pedacos-de-dolar-e-imitacao-de-cannabis.ghtml',
+    title: 'Mais de 10 empresas abrem vagas de emprego e estágio; veja lista',
+    author: 'G1',
+    img: 'img/g1-1.png',
+    authorimg: 'img/g1-logo.png',
+    link: 'https://g1.globo.com/economia/concursos-e-emprego/noticia/2021/07/01/mais-de-10-empresas-abrem-vagas-de-emprego-e-estagio-veja-lista.ghtml',
 },
 {
     id: 3,
-    title: 'Guga toma um pau no ping pong',
-    author: 'Ensight',
-    img: 'img/pingpongNews.jpeg',
-    authorimg: 'img/logoGlobo.png',
-    link: 'https://g1.globo.com/sp/santos-regiao/noticia/2021/05/12/manicure-viraliza-ao-produzir-unhas-de-ate-12-cm-com-pedacos-de-dolar-e-imitacao-de-cannabis.ghtml',
+    title: 'Paulo Guedes confirma dois novos programas para recuperação de empregos',
+    author: 'Veja',
+    img: 'img/veja-1.png',
+    authorimg: 'img/veja-logo.png',
+    link: 'https://veja.abril.com.br/economia/paulo-guedes-anuncia-dois-novos-programas-para-recuperacao-de-empregos/',
 },
 ]
+
+
+
+
 
 const DOM = {
 
@@ -36,7 +40,7 @@ const DOM = {
         div.classList.add('col-sm-12')
         div.innerHTML = DOM.innerHTMLNews(news)
 
-        DOM.newsContainer.appendChild(div)
+        DOM.newsContainer.appendChild(div);
     },
 
     innerHTMLNews(news){
@@ -53,12 +57,12 @@ const DOM = {
           </div>
 
           <div class="articles_grid_caption">
-            <h4 style="text-transform: none">
+            <h4 style="text-transform: none" class= 'newsTitle'>
               ${news.title}
             </h4>
             <div class="articles_grid_author">
               <div class="articles_grid_author_img">
-                <img src="${news.authorimg}" class="img-fluid" alt="" />
+                <img src="${news.authorimg}" class="img-fluid" alt=""  style='object-fit: cover'/>
               </div>
               <h4>${news.author}</h4>
             </div>
@@ -73,3 +77,5 @@ const DOM = {
 news.forEach(function(news){
     DOM.addNews(news)
 })
+
+

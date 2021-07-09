@@ -7903,7 +7903,7 @@ p.description {
   .list
   li
   a:hover {
-  color: #ef4060;
+  color: #16a3fe;
 }
 .single_article_pagination {
   display: -webkit-box;
@@ -10613,7 +10613,6 @@ html {
   font-family: "Montserrat", sans-serif !important ;
 }
 
-
 .hide {
   display: none;
 }
@@ -10771,4 +10770,41 @@ html {
 
 .education_block_body p {
   min-height: 50px;
+}
+
+.newsTitle {
+  min-height: 78px;
+}
+
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
 }

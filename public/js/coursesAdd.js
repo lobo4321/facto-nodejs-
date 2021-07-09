@@ -123,7 +123,7 @@ const coursesEd = [
 },
     {
     id: 11,
-    title: 'Curso de Design de Sobrancelhas com Certificado [COMPROVADO]',
+    title: 'Curso de Design de Sobrancelhas',
     class: 'designerCilios',
     description: 'O curso de design de sobrancelhas  com certificado é tudo que você precisa para conseguir ser uma profissional qualificada nessa área da estética.',
     img: 'img/portal-estetica-curso.jpeg',
@@ -312,6 +312,8 @@ descriptions.forEach(description => {
   return
   }
 })
+
+
 
 
 module.exports = {coursesEd}

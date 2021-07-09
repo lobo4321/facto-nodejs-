@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="www.frebsite.nl" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Feira Blog-mei</title>
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Custom Color Option -->
+    <link href="css/colors.css" rel="stylesheet" />
+  </head>
+
+  <body class="red-skin blog-page">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div id="preloader">
+      <div class="preloader"><span></span><span></span></div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+      <!-- ============================================================== -->
+      <!-- Top header  -->
+      <!-- ============================================================== -->
+      <!-- Start Navigation -->
+      <%- include('parts/page-header') %>
+      <!-- End Navigation -->
+      <div class="clearfix"></div>
+      <!-- ============================================================== -->
+      <!-- Top header  -->
+      <!-- ============================================================== -->
+
+      <!-- ============================ Page Title Start================================== -->
+
+      <!-- ============================ Page Title End ================================== -->
+      <%- include('parts/page-title', {title: 'Blog-Feira', subtitle: 'Blogs'})
+      %>
+      <!-- ============================ Agency List Start ================================== -->
+      <section class="gray">
+        <div class="container">
+          <!-- row Start -->
+          <div class="row">
+            <!-- Blog Detail -->
+            <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+              <div
+                class="article_detail_wrapss single_article_wrap format-standard"
+              >
+                <div class="article_body_wrap">
+                  <div class="article_featured_image">
+                    <img
+                      class="img-fluid"
+                      src="img/blog-mei.png"
+                      style="width: 1200px; height: 500px"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="article_top_info">
+                    <ul class="article_middle_info">
+                      <li>
+                        <a href="#"
+                          ><span class="icons"><i class="ti-user"></i></span>by
+                          João Lobo
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><span class="icons"><i class="ti-calendar"></i></span
+                          >07/07/2021</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 style="text-transform: none" class="post-title">
+                    Tudo o que você precisa saber sobre MEI
+                  </h2>
+                  <p>
+                    O Microempreendedor Individual ou MEI, como é conhecido, é a
+                    formalização da atividade empresarial de quem trabalha por
+                    conta própria ou deseja empreender. Válida desde 2009 no
+                    Brasil, o MEI tem registro no Cadastro Nacional de Pessoas
+                    Jurídicas (CNPJ) e se encaixa ao Simples Nacional, com
+                    isenção dos impostos federais.
+                  </p>
+                  <p>
+                    Mas para ser um MEI, é necessário cumprir as seguintes
+                    regras básicas:
+                  </p>
+                  <ul>
+                    <li>
+                      O CPF usado não pode ter participação em outra empresa,
+                      como titular e nem como sócio;
+                    </li>
+                    <li>Possuir um faturamento anual de até R$ 81.000,00.</li>
+                  </ul>
+                  <p>
+                    Se você cumprir os requisitos básicos, para abrir e
+                    formalizar o MEI não é necessário pagar nenhuma taxa! Isso
+                    também é válido para fazer o registro da empresa. Depois de
+                    feito, o microempreendedor possui algumas obrigatoriedades,
+                    veja a seguir:
+                  </p>
+                  <ul>
+                    <li>Pagar o DAS (carnê mensal);</li>
+                    <li>
+                      Realizar a declaração Anual do Simples Nacional
+                      (DASN-MEI).
+                    </li>
+                  </ul>
+                  <p>
+                    O DAS (Documento de Arrecadação do Simples Nacional) é a
+                    contribuição que gira em torno de R$ 50 e também pode sofrer
+                    variação conforme o piso salarial da atividade. Ao realizar
+                    o pagamento do DAS, você contribui para o INSS, que
+                    corresponde a 5% do salário mínimo e também garante os
+                    seguintes direitos: auxílio doença, salário maternidade e
+                    aposentadoria.
+                  </p>
+                  <h6
+                    id="configSub"
+                    style="text-transform: none; margin-top: 30px"
+                  >
+                    E quais impostos estão inclusos no Simples Nacional?
+                  </h6>
+                  <p>
+                    É também através do pagamento mensal do DAS que são
+                    recolhidos os seguintes impostos:
+                  </p>
+                  <ul class="lists-3" style="margin-top: 35px">
+                    <li>Imposto sobre a Renda da Pessoa Jurídica (IRPJ);</li>
+                    <li>Imposto sobre Produtos Industrializados (IPI);</li>
+                    <li>Contribuição Social sobre o Lucro Líquido (CSLL);</li>
+                    <li>
+                      Contribuição para o Financiamento da Seguridade Social
+                      (COFINS);
+                    </li>
+                    <li>Contribuição para o PIS/Pasep;</li>
+                    <li>Contribuição Patronal Previdenciária (CPP);</li>
+                    <li>
+                      Imposto sobre Operações Relativas à Circulação de
+                      Mercadorias e Sobre Prestações de Serviços de Transporte
+                      Interestadual e Intermunicipal e de Comunicação (ICMS);
+                    </li>
+                    <li>Imposto sobre Serviços de Qualquer Natureza (ISS).</li>
+                  </ul>
+                  <h6
+                    id="configSub"
+                    style="text-transform: none; margin-top: 30px"
+                  >
+                    Mas afinal, é obrigatório emitir nota fiscal?
+                  </h6>
+                  <p>
+                    O MEI é obrigado por lei a emitir nota fiscal (nf) em
+                    serviços que envolvam pessoas jurídicas, independente do
+                    porte da empresa. Já para o consumidor final, a pessoa
+                    física, não há a necessidade de emitir a nota.
+                  </p>
+                  <p>
+                    A emissão da NF pode ser realizada como Nota Fiscal Avulsa
+                    (NFA), que é emitida em papel após a impressão de um talão
+                    de notas ou como Nota Fiscal Eletrônica (NF-e), que é
+                    realizada através da internet, sem a necessidade da
+                    impressão de papel ou documento físico.
+                  </p>
+                  <div class="article_bottom_info">
+                    <div class="post-share">
+                      <h4 style="text-transform: none" class="pbm-title">
+                        Acesse nossas redes sociais :)
+                      </h4>
+                      <ul class="list">
+                        <li>
+                          <a
+                            target="_blank"
+                            href="https://www.facebook.com/feirabr"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+
+                        <li>
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/company/feira-brasil/?viewAsMember=true"
+                            ><i class="fab fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            target="_blank"
+                            href="https://www.instagram.com/feira_br/"
+                            ><i class="fab fa-instagram"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Author Detail -->
+              <div
+                class="article_detail_wrapss single_article_wrap format-standard"
+              >
+                <div class="article_posts_thumb">
+                  <span class="img"
+                    ><img class="img-fluid" src="img/lobo.png" alt=""
+                  /></span>
+                  <h3 class="pa-name">João Lobo</h3>
+                  <ul class="social-links">
+                    <li>
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/joao-guilherme-lobo-dos-santos-433959180/"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single blog Grid -->
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+              <!-- Searchbard -->
+
+              <!-- Categories -->
+
+              <!-- Trending Posts -->
+              <div class="single_widgets widget_thumb_post">
+                <h4 class="title" style="text-transform: none">
+                  Não deixe de ler
+                </h4>
+                <ul>
+                  <li>
+                    <span class="left">
+                      <img src="img/blog-maisProcuradas.jpeg" alt="" class="" />
+                    </span>
+                    <span class="right">
+                      <a class="feed-title" href="/blog-maisProcuradas"
+                        >Quais as áreas de prestação de serviço são as mais
+                        procuradas</a
+                      >
+                      <span class="post-date"
+                        ><i class="ti-calendar"></i>07/07/2021</span
+                      >
+                    </span>
+                  </li>
+                  <li>
+                    <span class="left">
+                      <img
+                        src="img/blog-vantagensPrestador.png"
+                        alt=""
+                        class=""
+                      />
+                    </span>
+                    <span class="right">
+                      <a class="feed-title" href="/blog-vantagensPrestador"
+                        >5 vantagens em ser um prestador de serviço
+                      </a>
+                      <span class="post-date"
+                        ><i class="ti-calendar"></i>07/07/2021</span
+                      >
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tags Cloud -->
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+      </section>
+      <!-- ============================ Agency List End ================================== -->
+
+      <!-- ============================== Start Newsletter ================================== -->
+      <%- include('parts/page-newsletter') %>
+      <!-- ================================= End Newsletter =============================== -->
+
+      <!-- ============================ Footer Start ================================== -->
+      <%- include('parts/page-footer') %>
+      <!-- ============================ Footer End ================================== -->
+
+      <a id="back2Top" class="top-scroll" title="Back to top" href="#"
+        ><i class="ti-arrow-up"></i
+      ></a>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+  </body>
+</html>

@@ -1,0 +1,4 @@
+<div class="content">
+  <%= PrismicDOM.RichText.asText(document.data.title) %> <%-
+  PrismicDOM.RichText.asHtml(document.data.rich_text, ctx.linkResolver) %>
+</div>

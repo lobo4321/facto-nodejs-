@@ -8,6 +8,8 @@ const queryTag = params?.q
 
 let tagButtons = document.querySelectorAll('.tag');
 let courses = document.querySelectorAll('.courses');
+console.log(courses)
+
 
 
 tagButtons.forEach(button => {
@@ -49,8 +51,10 @@ function changeTagColor(button) {
 
 
 let countCourses = document.getElementById('countCourses')
+let coursesNotHide = document.querySelectorAll('div:not(.hide).courses')
 
 
+countCourses.innerHTML = coursesNotHide.length
 
 
 
@@ -64,4 +68,3 @@ let countCourses = document.getElementById('countCourses')
 
 
 // 
-
